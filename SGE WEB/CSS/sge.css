@@ -1,0 +1,111 @@
+/* Imágenes — cambia las rutas por las tuyas */
+.img-sge1 {
+  background-image: url(../IMG/QUE.PNG);
+  background-repeat: no-repeat;
+  background-color: #1a0033;
+}
+.img-sge2 {
+  background-image: url(../IMG/VENTAJAS.jpeg);
+  background-repeat: no-repeat;
+  background-color: #1a0033;
+}
+.img-sge3 {
+  background-image: url(../IMG/TIPO_SGE.png);
+  background-color: #1a0033;
+  background-repeat: no-repeat;
+}
+.img-sge4 {
+  background-image: url(../img/CARACTERISTICAS.jpeg);
+  background-color: #1a0033;
+  background-repeat: no-repeat;
+}
+
+/* Lista con iconos */
+.lista-iconos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.lista-iconos li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.lista-iconos li i {
+  color: #9b30ff;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.lista-iconos li strong {
+  color: #cc99ff;
+}
+
+/* Grid de tipos */
+.tipos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.tipo-card {
+  background-color: rgba(106, 13, 173, 0.15);
+  border: 1px solid rgba(155, 48, 255, 0.25);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.tipo-card h3 {
+  color: #cc99ff;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tipo-card h3 i {
+  color: #9b30ff;
+}
+
+.tipo-card p {
+  font-size: 0.85rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+/* Índice aside */
+.indice {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.indice li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s;
+}
+
+.indice li a:hover {
+  color: #cc99ff;
+}
+
+@media screen and (max-width: 576px) {
+  .tipos-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolibarr ERP</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dolibarr.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>SGE</h1>
+      <img src="./IMG/logo dolibarr.png" alt="Logo SGE" />
+      <h1>Dolibarr ERP</h1>
+    </header>
+
+    <nav>
+      <div class="menu-button">
+        <p>MENÚ</p>
+        <button onclick="muestraMenu()"></button>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="sge.html">¿QUÉ ES UN SGE?</a></li>
+        <li><a href="dolibarr.html">DOLIBARR</a></li>
+        <li><a href="dolibarr.html#informes">INFORMES</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- INTRO -->
+      <article id="intro">
+        <section class="img-article img-doli1"></section>
+        <section>
+          <h2>¿Qué es Dolibarr?</h2>
+          <p>
+            Dolibarr es un ERP/CRM gratuito y de código abierto pensado para
+            pequeñas y medianas empresas, autónomos y asociaciones. Funciona
+            desde el navegador sin necesidad de instalar nada en cada equipo, y
+            puedes activar solo los módulos que necesitas: si no usas un módulo,
+            simplemente no aparece.
+          </p>
+          <p>
+            Es una de las opciones más sencillas del mercado para empezar con un
+            ERP sin complicaciones ni costes de licencia.
+          </p>
+        </section>
+      </article>
+
+      <!-- INSTALACIÓN -->
+      <article id="instalacion">
+        <section class="img-article img-doli2"></section>
+        <section>
+          <h2>Instalación</h2>
+          <p>
+            Para instalar Dolibarr en Windows usamos <strong>DoliWamp</strong>,
+            un paquete que incluye todo lo necesario: Apache, MySQL, PHP y el
+            propio Dolibarr. Sin complicaciones de configuración manual.
+          </p>
+          <ol class="lista-pasos">
+            <li>Descargar DoliWamp desde la web oficial de Dolibarr.</li>
+            <li>
+              Ejecutar el instalador y seguir el asistente (siguiente,
+              siguiente, instalar).
+            </li>
+            <li>Al terminar, DoliWamp aparece en la bandeja del sistema.</li>
+            <li>
+              Abrir el navegador y acceder a <code>http://localhost</code>.
+            </li>
+            <li>Seguir el asistente de configuración inicial de Dolibarr.</li>
+            <li>
+              Crear el usuario administrador y acceder al panel principal.
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <!-- CAPTURAS INSTALACIÓN -->
+      <article class="articulo-capturas">
+        <section class="capturas-grid">
+          <h2><i class="fa-solid fa-camera"></i> Proceso de instalación</h2>
+          <div class="grid-capturas">
+            <figure>
+              <img src="./IMG/INSTALACION.png" alt="Descarga DoliWamp" />
+              <figcaption>Descarga del instalador DoliWamp</figcaption>
+            </figure>
+            <figure>
+              <img src="./IMG/ASISTENTE_INST.png" alt="Asistente instalación" />
+              <figcaption>Asistente de instalación</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./IMG/accesodoli.png" alt="Login Dolibarr" />
+              <figcaption>Pantalla de acceso a Dolibarr</figcaption>
+            </figure>
+            <figure>
+              <img src="./IMG/serv.png" alt="servidor" />
+              <figcaption>servidor configurado</figcaption>
+            </figure>
+          </div>
+        </section>
+      </article>
+
+      <!-- ADMINISTRACIÓN -->
+      <article id="administracion">
+        <section class="img-article img-doli3"></section>
+        <section>
+          <h2>Administración y configuración</h2>
+          <p>
+            Desde el menú <strong>Configuración</strong> el administrador puede
+            ajustar todo lo relacionado con el funcionamiento del sistema. Las
+            opciones más importantes son:
+          </p>
+          <ul class="lista-iconos">
+            <li>
+              <i class="fa-solid fa-toggle-on"></i>
+              <strong>Módulos:</strong> activar o desactivar funcionalidades
+              según lo que necesite la empresa.
+            </li>
+            <li>
+              <i class="fa-solid fa-building"></i>
+              <strong>Empresa:</strong> nombre, logo, moneda e idioma.
+            </li>
+            <li>
+              <i class="fa-solid fa-user-gear"></i>
+              <strong>Usuarios:</strong> crear cuentas y asignar roles y
+              permisos.
+            </li>
+            <li>
+              <i class="fa-solid fa-sliders"></i>
+              <strong>Parámetros:</strong> numeración de facturas, IVA, formatos
+              de fecha, etc.
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- CAPTURAS ADMINISTRACIÓN -->
+      <article class="articulo-capturas">
+        <section class="capturas-grid">
+          <h2>
+            <i class="fa-solid fa-camera"></i> Administración y configuración
+          </h2>
+          <div class="grid-capturas">
+            <figure>
+              <img src="./IMG/ADMI&CONF.png" alt="Panel administración" />
+              <figcaption>Panel principal de administración</figcaption>
+            </figure>
+            <figure>
+              <img src="./IMG/PANELPRIN.png" alt="Activación módulos" />
+              <figcaption>Activación de módulos</figcaption>
+            </figure>
+            <figure>
+              <img src="./IMG/EMPRESA.png" alt="Configuración empresa" />
+              <figcaption>Configuración de la empresa</figcaption>
+            </figure>
+            <figure>
+              <img src="./IMG/GUSUARIOS.png" alt="Gestión usuarios" />
+              <figcaption>Gestión de usuarios</figcaption>
+            </figure>
+          </div>
+        </section>
+      </article>
+
+      <!-- ROLES -->
+      <article id="roles">
+        <section class="img-article img-doli4"></section>
+        <section>
+          <h2>Acceso seguro: Roles y privilegios</h2>
+          <p>
+            Dolibarr tiene un sistema de permisos bastante completo que permite
+            controlar exactamente qué puede hacer cada usuario dentro del
+            sistema. Se gestiona desde
+            <strong>Configuración → Usuarios y Grupos</strong>.
+          </p>
+          <ul class="lista-iconos">
+            <li>
+              <i class="fa-solid fa-user-shield"></i>
+              <strong>Administrador:</strong> acceso total a todas las funciones
+              y configuraciones del sistema.
+            </li>
+            <li>
+              <i class="fa-solid fa-user-tie"></i>
+              <strong>Gestor:</strong> puede crear y editar documentos pero no
+              acceder a la configuración general.
+            </li>
+            <li>
+              <i class="fa-solid fa-user"></i>
+              <strong>Usuario básico:</strong> acceso limitado a módulos
+              concretos o solo lectura.
+            </li>
+            <li>
+              <i class="fa-solid fa-lock"></i> Los permisos se asignan módulo a
+              módulo: facturas, clientes, almacén, contabilidad, etc.
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- CAPTURAS ROLES -->
+      <article class="articulo-capturas">
+        <section class="capturas-grid">
+          <h2><i class="fa-solid fa-camera"></i> Roles y permisos</h2>
+          <div class="grid-capturas">
+            <figure>
+              <img src="./IMG/USUARIO.png" alt="Crear usuario" />
+              <figcaption>Creación de un nuevo usuario</figcaption>
+            </figure>
+            <figure>
+              <img src="./IMG/NUEVOUSUARIO.png" alt="Asignación permisos" />
+              <figcaption>Asignación de permisos por módulo</figcaption>
+            </figure>
+            <figure>
+              <img src="./IMG/GRUPOS.png" alt="Grupos usuarios" />
+              <figcaption>Gestión de grupos</figcaption>
+            </figure>
+          </div>
+        </section>
+      </article>
+
+      <!-- INFORMES -->
+      <article id="informes">
+        <section class="img-article img-doli5"></section>
+        <section>
+          <h2>Elaboración de informes</h2>
+          <p>
+            Dolibarr permite generar informes desde los distintos módulos
+            activos. Desde facturación puedes sacar listados de facturas, y
+            desde el panel principal tienes acceso a estadísticas generales del
+            sistema.
+          </p>
+          <ul class="lista-iconos">
+            <li>
+              <i class="fa-solid fa-file-pdf"></i> Exportación a
+              <strong>PDF</strong> de facturas, presupuestos y albaranes
+              directamente desde cada documento.
+            </li>
+            <li>
+              <i class="fa-solid fa-file-csv"></i> Exportación de listados a
+              <strong>CSV</strong> para trabajar con los datos en Excel u otras
+              herramientas.
+            </li>
+            <li>
+              <i class="fa-solid fa-chart-bar"></i> Estadísticas y gráficos
+              disponibles desde el panel principal del sistema.
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- CAPTURAS INFORMES — 3 capturas -->
+      <article class="articulo-capturas">
+        <section class="capturas-grid">
+          <h2><i class="fa-solid fa-camera"></i> Informes y exportación</h2>
+          <div class="grid-capturas tres-capturas">
+            <figure>
+              <img src="./IMG/PDFACTURA.png" alt="Exportar PDF" />
+              <figcaption>Generación de PDF desde una factura</figcaption>
+            </figure>
+            <figure>
+              <img src="./IMG/ESTADISTICA.png" alt="Estadísticas" />
+              <figcaption>Panel de estadísticas del sistema</figcaption>
+            </figure>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <h3>Contenido</h3>
+      <ul class="indice">
+        <li>
+          <a href="#intro"
+            ><i class="fa-solid fa-chevron-right"></i> ¿Qué es Dolibarr?</a
+          >
+        </li>
+        <li>
+          <a href="#instalacion"
+            ><i class="fa-solid fa-chevron-right"></i> Instalación</a
+          >
+        </li>
+        <li>
+          <a href="#administracion"
+            ><i class="fa-solid fa-chevron-right"></i> Administración</a
+          >
+        </li>
+        <li>
+          <a href="#roles"
+            ><i class="fa-solid fa-chevron-right"></i> Roles y acceso</a
+          >
+        </li>
+        <li>
+          <a href="#informes"
+            ><i class="fa-solid fa-chevron-right"></i> Informes</a
+          >
+        </li>
+      </ul>
+      <div class="aside-dato">
+        <p><strong>Dolibarr en cifras:</strong></p>
+        <ul
+          style="
+            margin-top: 8px;
+            padding-left: 15px;
+            font-size: 0.85rem;
+            color: #bbb;
+          "
+        >
+          <li>+7 millones de descargas</li>
+          <li>Disponible en +25 idiomas</li>
+          <li>Más de 1.000 módulos</li>
+          <li>Comunidad activa desde 2003</li>
+        </ul>
+      </div>
+      <div class="aside-dato">
+        <p>
+          <strong>Web oficial:</strong><br />
+          <a
+            href="https://www.dolibarr.org"
+            target="_blank"
+            style="color: #cc99ff"
+            >www.dolibarr.org</a
+          >
+        </p>
+      </div>
+    </aside>
+
+    <footer>
+      <p>
+        <a href="https://github.com" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </p>
+    </footer>
+
+    <script>
+      function muestraMenu() {
+        let menu = document.querySelector(".menu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

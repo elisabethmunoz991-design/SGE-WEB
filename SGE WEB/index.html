@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGE - Sistemas de Gestión Empresarial</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>SGE</h1>
+      <img src="./IMG/logo dolibarr.png" alt="Logo SGE" />
+      <h1>Gestión Empresarial</h1>
+    </header>
+
+    <nav>
+      <div class="menu-button">
+        <p>MENÚ</p>
+        <button onclick="muestraMenu()"></button>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="sge.html">¿QUÉ ES UN SGE?</a></li>
+        <li><a href="dolibarr.html">DOLIBARR</a></li>
+        <li><a href="dolibarr.html#informes">INFORMES</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <section class="img-article img1"></section>
+        <section>
+          <h2>¿Qué es un SGE?</h2>
+          <p>
+            Un Sistema de Gestión Empresarial es básicamente un software que une
+            todos los departamentos de una empresa en un mismo sitio. En vez de
+            tener mil programas distintos para contabilidad, ventas o almacén,
+            lo tienes todo centralizado y sincronizado en tiempo real.
+          </p>
+          <a href="sge.html">LEER MÁS</a>
+        </section>
+      </article>
+      <article>
+        <section class="img-article img2"></section>
+        <section>
+          <h2>Tipos de SGE</h2>
+          <p>
+            No todos los SGE son iguales. Dependiendo de lo que necesite la
+            empresa existen varios tipos: ERP para gestión global, CRM para
+            clientes, SCM para la cadena de suministro o BI para análisis de
+            datos. Cada uno cubre un área distinta del negocio.
+          </p>
+          <a href="sge.html#tipos">LEER MÁS</a>
+        </section>
+      </article>
+      <article>
+        <section class="img-article img3"></section>
+        <section>
+          <h2>Dolibarr ERP</h2>
+          <p>
+            Dolibarr es un ERP gratuito y de código abierto que funciona
+            directamente desde el navegador. Es perfecto para empresas pequeñas
+            porque es fácil de instalar y no requiere conocimientos técnicos
+            avanzados. Módulos de facturación, almacén, proyectos y más.
+          </p>
+          <a href="dolibarr.html">LEER MÁS</a>
+        </section>
+      </article>
+      <article>
+        <section class="img-article img4"></section>
+        <section>
+          <h2>Informes y Exportación</h2>
+          <p>
+            Una de las partes más útiles de cualquier SGE es poder generar
+            informes y exportar datos. Dolibarr permite sacar facturas en PDF,
+            exportar listados en CSV y consultar estadísticas desde el propio
+            panel, lo que facilita bastante la toma de decisiones.
+          </p>
+          <a href="dolibarr.html#informes">LEER MÁS</a>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <h3>¿Por qué usar un SGE?</h3>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Todo centralizado en un sitio</li>
+        <li><i class="fa-solid fa-check"></i> Menos errores manuales</li>
+        <li>
+          <i class="fa-solid fa-check"></i> Datos actualizados en tiempo real
+        </li>
+        <li><i class="fa-solid fa-check"></i> Control de accesos y permisos</li>
+        <li><i class="fa-solid fa-check"></i> Informes automáticos</li>
+        <li>
+          <i class="fa-solid fa-check"></i> Se adapta al tamaño de la empresa
+        </li>
+      </ul>
+      <div class="aside-dato">
+        <p>
+          <strong>Dato:</strong> el 70% de las empresas que implementan un ERP
+          mejoran su eficiencia operativa en el primer año.
+        </p>
+      </div>
+    </aside>
+
+    <footer>
+      <p>
+        <a href="https://github.com" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </p>
+    </footer>
+
+    <script>
+      function muestraMenu() {
+        let menu = document.querySelector(".menu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
